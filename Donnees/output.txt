@@ -1,0 +1,14 @@
+Coin;1;0.0;0.0
+Coin;2;5.0;0.0
+Coin;3;5.0;6.0
+Coin;4;0.0;6.0
+Mur;Mur 1 : 1;0.0;0.0 -> 2;5.0;0.0 avec 0 portes et 1 fenetres
+Mur;Mur 2 : 2;5.0;0.0 -> 3;5.0;6.0 avec 1 portes et 0 fenetres
+Mur;Mur 3 : 3;5.0;6.0 -> 4;0.0;6.0 avec 0 portes et 1 fenetres
+Mur;Mur 4 : 4;0.0;6.0 -> 1;0.0;0.0 avec 0 portes et 0 fenetres
+Sol;Sol 1
+Plafond;Plafond 1
+Piece;Piece 1
+Appartement;Appartement 1
+Niveau;Niveau 0
+Batiment;classes.Batiment@238e0d81
