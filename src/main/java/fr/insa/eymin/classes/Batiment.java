@@ -1,6 +1,6 @@
 package fr.insa.eymin.classes;
 
-import com.sun.tools.javac.Main;
+import javafx.scene.layout.Pane;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -12,7 +12,9 @@ public class Batiment {
     private int idBatiment;
     private Niveau[] listeNiveaux;
 
-    public void afficher() {
+    public static void afficher(Coin[] coins, Mur[] murs, Pane plan) {
+        Coin.afficher(coins, plan);
+        Mur.afficher(murs, plan);
     }
 
     public static void sauvegarder(Coin[] coins, Mur[] murs, Sol[] sols, Plafond[] plafonds, Piece[] pieces,

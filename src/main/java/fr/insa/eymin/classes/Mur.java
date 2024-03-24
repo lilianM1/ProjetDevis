@@ -1,6 +1,9 @@
 package fr.insa.eymin.classes;
 
 import java.lang.Math;
+
+import javafx.scene.layout.Pane;
+import javafx.scene.shape.Line;
 import lombok.Data;
 
 @Data
@@ -14,7 +17,15 @@ public class Mur {
     private Revetement[] listeRevetements;
     private Mur[] murs = new Mur[100];
 
-    public void afficher() {
+    public static void afficher(Mur[] murs, Pane plan) {
+        for (int i = 0; i < murs.length; i++) {
+            if (murs[i] != null) {
+                Line mur = new Line(murs[i].getCoinDebut().getCx() * 50 + 10, murs[i].getCoinDebut().getCy() * 50 + 10,
+                        murs[i].getCoinFin().getCx() * 50 + 10, murs[i].getCoinFin().getCy() * 50 + 10);
+                plan.getChildren().add(mur);
+            }
+        }
+
     }
 
     public String toString() {

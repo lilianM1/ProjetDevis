@@ -5,16 +5,11 @@
 package fr.insa.eymin.gui;
 
 import fr.insa.eymin.*;
-import fr.insa.eymin.classes.Lire;
+import fr.insa.eymin.classes.*;
 import javafx.application.Application;
-import static javafx.application.Application.launch;
-
-import java.util.concurrent.CountDownLatch;
-
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
-import javafx.scene.shape.Circle;
+import javafx.scene.shape.*;
 import javafx.stage.Stage;
 
 /**
@@ -25,16 +20,32 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        Pane root = new Pane();
+        Pane plan = new Pane();
+        Object[] batimentTab = Projet.main();
+        Coin[] coins = (Coin[]) batimentTab[0];
+        Mur[] murs = (Mur[]) batimentTab[1];
+        // Sol[] sols = (Sol[]) batimentTab[2];
+        // Plafond[] plafonds = (Plafond[]) batimentTab[3];
+        // Piece[] pieces = (Piece[]) batimentTab[4];
+        // Appartement[] appartements = (Appartement[]) batimentTab[5];
+        // Niveau[] niveaux = (Niveau[]) batimentTab[6];
+        // Batiment[] batiments = (Batiment[]) batimentTab[7];
 
-        // Create a label with the text "Hello World"
-        // Create a label with the text "Hello World"
-      
+        Batiment.afficher(coins, murs, plan);
 
-        // Create a point (small circle) and add it to the root pane
-        Circle point = new Circle(50, 50, 1); // 50, 50 is the x,y position of the point and 5 is the radius
-        root.getChildren().add(point);
-        Scene scene = new Scene(root, 800, 400);
+        double maxX = 0;
+        double maxY = 0;
+
+        for (int i = 0; i < coins.length; i++) {
+            if (coins[i] != null) {
+                Circle coin = new Circle(coins[i].getCx() * 50 + 10, coins[i].getCy() * 50 + 10, 1);
+                plan.getChildren().add(coin);
+                maxX = Math.max(maxX, coins[i].getCx() * 50 + 10);
+                maxY = Math.max(maxY, coins[i].getCy() * 50 + 10);
+            }
+        }
+
+        Scene scene = new Scene(plan, maxX + 20, maxY + 20);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Plan du bâtiment");
         primaryStage.show();
@@ -42,7 +53,6 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
-
         launch();
     }
 }

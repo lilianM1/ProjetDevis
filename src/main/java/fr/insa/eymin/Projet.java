@@ -18,7 +18,8 @@ import lombok.Data;
 
 @Data
 public class Projet {
-    public static String main() {
+
+    public static Object[] main() {
         System.out.println(System.getProperty("user.dir"));
         // -----------------------------------------------------------------------------------------
         // comptage du nombre de revetements (on pourra ajouter des revetements qui
@@ -99,9 +100,9 @@ public class Projet {
                         // Batiment[] batiments = (Batiment[]) batimentTab[7];
 
                         // -----------------------------------------------------------------------------------------
-
-                        return Batiment.devisBatiment(murs, sols, plafonds, revetements, niveaux, appartements, pieces,
+                        Batiment.devisBatiment(murs, sols, plafonds, revetements, niveaux, appartements, pieces,
                                 nbRevetements);
+                        return batimentTab;
                         // -----------------------------------------------------------------------------------------
 
                     } else if (reponse == 'n') {

@@ -1,5 +1,7 @@
 package fr.insa.eymin.classes;
 
+import javafx.scene.layout.Pane;
+import javafx.scene.shape.Circle;
 import lombok.Data;
 
 @Data
@@ -8,7 +10,14 @@ public class Coin {
     private double cx;
     private double cy;
 
-    public void afficher() {
+    public static void afficher(Coin[] coins, Pane plan) {
+        for (int i = 0; i < coins.length; i++) {
+            if (coins[i] != null) {
+                Circle coin = new Circle(coins[i].getCx() * 50 + 10, coins[i].getCy() * 50 + 10, 0);
+                plan.getChildren().add(coin);
+            }
+
+        }
     }
 
     public String toString() {

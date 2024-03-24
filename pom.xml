@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>fr.insa.beuvron</groupId>
-    <artifactId>tutoVideoDessin</artifactId>
+    <groupId>fr.insa.eymin</groupId>
+    <artifactId>Projet_InfoM2</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <properties>
@@ -56,8 +56,8 @@
                     <stripDebug>true</stripDebug>
                     <noManPages>true</noManPages>
                     <mainClass>fr.insa.eymin.gui.Main</mainClass>
-                    <launcher>TutoVideoDessin</launcher>
-                    <jlinkImageName>TutoVideoDessin</jlinkImageName>
+                    <launcher>Projet_InfoM2</launcher>
+                    <jlinkImageName>Projet_InfoM2</jlinkImageName>
 <!-- pour zipper le dossier image
  je ne le fais pas car je veux créer d'abord un raccourci vers le launcher
                 <jlinkZipName>TutoVideoDessin</jlinkZipName>
