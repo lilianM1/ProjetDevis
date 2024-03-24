@@ -1,8 +1,10 @@
-Le revetement n°1 (Peinture) couvrira une surface totale de 15.0 m² pour un prix total de 164.25€
-Le revetement n°2 (Carrelage) couvrira une surface totale de 9.0 m² pour un prix total de 447.75€
-Le revetement n°3 (Lambris) couvrira une surface totale de 15.0 m² pour un prix total de 759.0€
-Le revetement n°8 (Peinture) couvrira une surface totale de 9.0 m² pour un prix total de 695.7€
-Le revetement n°10 (Carrelage) couvrira une surface totale de 15.0 m² pour un prix total de 1341.75€
-Le revetement n°13 (Parquet) couvrira une surface totale de 15.0 m² pour un prix total de 695.4€
+Le revetement n°1 (Peinture) couvrira une surface totale de 111.12 m² pour un prix total de 1216.764€
+Le revetement n°2 (Carrelage) couvrira une surface totale de 18.0 m² pour un prix total de 895.5€
+Le revetement n°7 (Plaquettes de parement) couvrira une surface totale de 18.0 m² pour un prix total de 273.6€
+Le revetement n°8 (Peinture) couvrira une surface totale de 11.67 m² pour un prix total de 902.091€
+Le revetement n°9 (Peinture) couvrira une surface totale de 24.33 m² pour un prix total de 727.467€
+Le revetement n°10 (Carrelage) couvrira une surface totale de 30.0 m² pour un prix total de 2683.5€
+Le revetement n°13 (Parquet) couvrira une surface totale de 12.0 m² pour un prix total de 556.32€
+Le revetement n°15 (Moquette) couvrira une surface totale de 6.0 m² pour un prix total de 288.6€
 
-Le prix total du batiment sera de 4103.85€
+Le prix total du batiment sera de 7543.8423€
