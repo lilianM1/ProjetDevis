@@ -20,8 +20,8 @@ public class Mur {
     public static void afficher(Mur[] murs, Pane plan) {
         for (int i = 0; i < murs.length; i++) {
             if (murs[i] != null) {
-                Line mur = new Line(murs[i].getCoinDebut().getCx() * 50 + 10, murs[i].getCoinDebut().getCy() * 50 + 10,
-                        murs[i].getCoinFin().getCx() * 50 + 10, murs[i].getCoinFin().getCy() * 50 + 10);
+                Line mur = new Line(murs[i].getCoinDebut().getCx() * 50 + 10, -murs[i].getCoinDebut().getCy() * 50 + 10,
+                        murs[i].getCoinFin().getCx() * 50 + 10, -murs[i].getCoinFin().getCy() * 50 + 10);
                 plan.getChildren().add(mur);
             }
         }

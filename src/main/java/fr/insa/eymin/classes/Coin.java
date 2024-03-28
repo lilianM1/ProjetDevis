@@ -13,7 +13,7 @@ public class Coin {
     public static void afficher(Coin[] coins, Pane plan) {
         for (int i = 0; i < coins.length; i++) {
             if (coins[i] != null) {
-                Circle coin = new Circle(coins[i].getCx() * 50 + 10, coins[i].getCy() * 50 + 10, 0);
+                Circle coin = new Circle(coins[i].getCx() * 50 + 10, -coins[i].getCy() * 50 + 10, 0);
                 plan.getChildren().add(coin);
             }
 

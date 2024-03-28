@@ -293,7 +293,7 @@ public class Batiment {
             devis += "\n";
             writer.println("Le prix total du batiment sera de " + prixTotal + "€");
             devis += "Le prix total du batiment sera de " + prixTotal + "€";
-            System.out.println("Retrouvez le Devis dans :" + System.getProperty("user.dir") + "\\Donnees\\Devis.txt");
+            System.out.println("Retrouvez le Devis dans : " + System.getProperty("user.dir") + "\\Donnees\\Devis.txt");
             return devis;
         } catch (FileNotFoundException e) {
             System.out.println("Une erreur s'est produite lors de la tentative d'écriture du devis.");
